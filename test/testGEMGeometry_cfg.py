@@ -14,7 +14,7 @@ process.maxEvents = cms.untracked.PSet(
 )
 
 
-process.es_prefer_HCALTopology = cms.ESPrefer("HcalTopologyIdealEP","hcalTopologyIdeal")
+process.es_prefer_HCALTopology = cms.ESPrefer("HcalTopologyIdealEP","hcalTopologyIdealSLHC")
 
 process.source = cms.Source("EmptySource")
 
