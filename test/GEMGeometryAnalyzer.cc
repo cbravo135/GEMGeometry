@@ -67,6 +67,7 @@ GEMGeometryAnalyzer::~GEMGeometryAnalyzer()
 void
 GEMGeometryAnalyzer::analyze( const edm::Event& /*iEvent*/, const edm::EventSetup& iSetup )
 {
+  cout << "Made it to analyze" << endl;
   edm::ESHandle<GEMGeometry> gemGeo;
   iSetup.get<MuonGeometryRecord>().get(gemGeo);     
   
